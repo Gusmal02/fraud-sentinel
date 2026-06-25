@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "bandit>=1.9.4",
     "chromadb>=1.5.9",
     "fastapi>=0.138.0",
     "imbalanced-learn>=0.14.2",

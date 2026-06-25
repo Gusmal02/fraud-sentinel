@@ -59,14 +59,14 @@ def _load_model():
             "Ejecuta classifier/train.py primero."
         )
     with open(MODEL_PATH, "rb") as f:
-        return pickle.load(f)
+        return pickle.load(f)   # nosec B301 - modelo generado internamente
 
 
 @lru_cache(maxsize=1)
 def _load_encoders():
     """Carga los encoders una sola vez."""
     with open(ENCODERS_PATH, "rb") as f:
-        return pickle.load(f)
+        return pickle.load(f)   # nosec B301 - encoders generados internamente
 
 
 def predict_fraud(claim_data: dict) -> dict:
