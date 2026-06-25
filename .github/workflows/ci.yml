@@ -20,7 +20,7 @@ jobs:
         run: uv sync --frozen
 
       - name: Run Bandit security check
-        run: uv run bandit -r agent/ api/ classifier/ llm/ document_intelligence/ -ll
+        run: uv run --with bandit bandit -r agent/ api/ classifier/ llm/ document_intelligence/ -ll
 
       - name: Run tests
         run: uv run pytest tests/ -v
