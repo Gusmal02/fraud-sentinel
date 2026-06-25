@@ -1,0 +1,27 @@
+artifact_path: file:C:/Users/Gustavo/Documents/tripleten/proyectos/fraud-sentinel/mlruns/1/models/m-7fba1d35d34a4bdc97e8498de52bb18a/artifacts
+flavors:
+  lightgbm:
+    code: null
+    data: model.skops
+    lgb_version: 4.6.0
+    model_class: lightgbm.sklearn.LGBMClassifier
+    serialization_format: skops
+    skops_trusted_types:
+    - lightgbm.sklearn.LGBMClassifier
+    - lightgbm.basic.Booster
+    - collections.OrderedDict
+    - lightgbm.sklearn.LGBMRegressor
+  python_function:
+    data: model.skops
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.12.10
+mlflow_version: 3.14.0
+model_id: m-7fba1d35d34a4bdc97e8498de52bb18a
+model_size_bytes: 373677
+model_uuid: m-7fba1d35d34a4bdc97e8498de52bb18a
+prompts: null
+run_id: 3834299c9c894199b6c25ea00b87f3c7
+utc_time_created: '2026-06-25 05:55:53.461217'
