@@ -60,7 +60,7 @@ def make_cache_key(texto: str) -> str:
     Returns:
         str: clave en formato 'fraud_sentinel:md5hash'
     """
-    hash_md5 = hashlib.md5(texto.encode()).hexdigest()
+    hash_md5 = hashlib.md5(texto.encode(), usedforsecurity=False).hexdigest()
     return f"fraud_sentinel:{hash_md5}"
 
 
