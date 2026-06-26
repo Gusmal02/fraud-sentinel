@@ -124,7 +124,5 @@ Más chunks = más tokens = más latencia sin mejora proporcional en calidad.
 
 ### Etapa siguiente
 1. **Gemini API** — reducir latencia de 3 min a 5 seg
-2. **Más tests** — cubrir agente LangGraph y RAG
-3. **Redis caché** — evitar llamadas repetidas al LLM
-4. **Formulario estructurado** — complementar texto libre con campos obligatorios
-5. **Reentrenamiento** — con datos reales del sector asegurador mexicano
+2. **Formulario estructurado** — complementar texto libre con campos obligatorios
+3. **Reentrenamiento** — con datos reales del sector asegurador mexicano
