@@ -15,6 +15,7 @@ services:
       - ./classifier/model:/app/classifier/model
       - ./classifier/data:/app/classifier/data
       - ./mlflow:/app/mlflow
+      - ./data:/app/data
     depends_on:
       - chromadb
     extra_hosts:
@@ -40,7 +41,9 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
+    # Montamos carpeta completa por compatibilidad con Docker Desktop en Windows
+      # En Linux/AWS se puede montar el archivo directamente
+      - ./observability:/etc/prometheus
 
   grafana:
     image: grafana/grafana:latest
